@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+     <div class="fullname">
+      <label for="fullname">fullname: <input type="text" name="fullname" id="fullname"></label>
+     </div>
+     <div class="gender">
+      <label for="gender">Gender: <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="Others">Others</option>
+      </select></label>
+     </div>
+     <div><label for="date">Date:</label>
+      <input type="date" name="date" id="date">
+     </div>
+     <div>
+      <label for="phone">Phone No:
+        <input type="tel" name="phone" id="phone">
+      </label>
+     </div>
+     <div class="states"><label for="states"> States: 
+      <select name="states" id="states">
+        <option value="FCT">FCT</option>
+        <option value="EDO">EDO</option>
+        <option value="LAGOS">LAGOS</option>
+      </select>
+     </label></div>
+     <div class="address"><label for="address">Address:</label>
+      <input type="text" name="address" id="address">
+     </div>
+     <div class="zipcode"> <label for="number">Zip-Code:</label>
+      <input type="number" name="zipcode" id="number">
+     </div>
+     <div class="subscribe">
+      <label for="subscription">Subscribe to our News Letter?</label>
+     </div>
+     <div class="subscription">
+      Yes:<input type="radio" name="subscribe" id="subscription">
+      No: <input type="radio" name="subscribe" id="subscription">
+     </div>
+     <div>
+      <label for="about-you"> About You:</label></div>
+      <div>
+      <textarea name="about-you" id="about-you" cols="" rows=""></textarea>
+    </div>
+    <div>
+      <label for="hobbies">Hobbies:  </label>
+
+        Reading: <input type="checkbox" name="hobbies" id="hobbies">
+        Driving: <input type="checkbox" name="hobbies" id="hobbies">
+        Swimming: <input type="checkbox" name="hobbies" id="hobbies">
+    </div>
+
+    <label for="submit">
+      <input type="submit" value="Submit">
+    </label>
+    </form>
+  </body>
+</html>

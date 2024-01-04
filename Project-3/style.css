@@ -1,0 +1,205 @@
+/* FONT IMPORT */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@100;300;400;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+body a{
+    text-decoration: none;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+/* VARIABLE DECLARATION */
+:root{
+    --bgcolor: #f7faf8;
+    --textcolor: #013339;
+    --font-size: 0.63rem;
+    --link-color: hsla(117, 58%, 14%, 0.566);
+    --btn-bg: #013339;
+    --btn-hover:#084349;
+
+}
+
+/* MAIN SECTION  OF THE FIRST CONTAINER */
+.parent-containter{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-area{
+    background-color:var(--bgcolor);
+    padding: 0 1rem;
+}
+.untitledUI{
+    display: flex;
+    margin-top: 1rem;
+    font-weight: 900;
+    gap: 0.3rem;
+    color: var(--textcolor);
+}
+.untitledUI img{
+    width: 1.2rem;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 3vh; */
+    align-items: center;
+}
+.welcome-note{
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.welcome-note p{
+    font-size: var(--font-size) ;
+    color: var(--textcolor);
+    font-weight: bold;
+    
+}
+.welcome-note h2{
+    font-size: 1.7rem;
+    color: var(--textcolor);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Form inputs */
+
+.enter{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: var(--font-size);
+    color: var(--textcolor);
+}
+.enter input{
+    display: block;
+    border-radius: 0.2rem;
+    width: 17rem;
+    padding: .25rem  .5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    color: var(--textcolor);
+    border: 1px solid #cfe0ce;
+    
+}
+
+.password input::placeholder{
+    font-size: 2rem;
+    
+}
+
+
+/* Rememeber Password */
+.remember{
+    display: flex;
+    color: var(--textcolor);
+    font-weight: bold;
+    font-size: var(--font-size);
+    gap: 3.3rem;
+}
+
+.checkbox-remember input{
+    color: var(--textcolor);
+}
+
+input[type="checkbox"]:checked{
+    background-color: var(--btn-bg);
+    border-color: #cfe0ce;
+}
+
+.remember a{
+    color: var(--textcolor);
+    font-weight: bold;
+}
+.remember a:visited{
+    color: var(--link-color);
+}
+    
+/* Button */
+.btn input{
+    width: 17rem;
+    border-radius: 0.2rem;
+    border: none;
+    color: white;
+    background-color:#013339;
+    padding: 0.3rem 0;
+    margin: 1rem 0;
+}
+.btn input:hover, :focus{
+    background-color: var(--btn-hover);
+}
+.btn p{
+    font-size: var(--font-size);
+    text-align: center;
+    color: var(--textcolor);
+    font-weight: bold;
+    font-size: var(--font-size);
+}
+.btn a{
+    color: var(--textcolor);
+}
+.btn a:visited{
+    color: var(--link-color);
+
+}
+
+/*  Bottom UI copyright */
+.copyright{
+    display: flex;
+    gap: .3rem;
+    margin-top: 15.2vh;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--textcolor);
+    
+}
+
+
+/* MAIN FOR 2ND CONTAINER */
+
+
+.snooker-box{
+    background-color: aliceblue;
+    background-image: url(./img/2.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+
+
+/* MEDIA QUERIES */
+/* 
+@media screen and (max-width: 600px) {
+    .snooker-box {
+        background-image: none;
+        background-color: #f7faf8;
+    }
+    .login-box{
+        margin-left: 4rem;
+    }
+  }
+  
+@media screen and (max-width: 750px) {
+    .snooker-box {
+        background-image: none;
+        background-color: #f7faf8;
+    }
+    .login-box{
+        margin-left: 12rem;
+    }
+  }
+ */
+
