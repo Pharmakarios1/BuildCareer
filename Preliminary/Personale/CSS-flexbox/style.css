@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section{
+    display: flex;
+    background-color: bisque;
+    width: 100%;
+    height: 100vh;
+    gap: 1rem;
+    justify-content: center;
+   
+}
+.one, .two, .tee{
+    margin-top: .5rem;
+}
+
+.one{
+    
+    height: 400px;
+    width: 300px;
+    background-color: black;
+}
+
+.two{
+    background-color: green; 
+    height: 400px;
+    width: 300px;
+
+}
+
+.tee{
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 0, 51);
+}
+header{
+    background-color: grey;
+}
+.nav{
+    display:flex;
+    gap: 18rem;
+}

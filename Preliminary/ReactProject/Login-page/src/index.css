@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 600px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: rgb(25, 89, 89);
+    border-radius: 15px;
+}
+
+.container > .logo {
+    margin-top: 20px;
+
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-radius: .2rem;
+    padding: 0 1rem;
+
+}
+
+button{
+    border: none;
+    background-color: rgb(237 90 72);
+    height: 2rem;
+    border-radius: .2rem;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 1rem auto;
+    cursor: pointer;
+
+}
+
+.forgot-password > p{
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    
+}
+.forgot-password :any-link{
+    text-decoration: none;
+    color: rgb(237, 90, 72);
+}
+.forgot-password > a:visited{
+    color: red;
+}

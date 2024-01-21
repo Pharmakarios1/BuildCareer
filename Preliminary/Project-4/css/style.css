@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+
+/* Constants Vairiables */
+:root{
+    --bgcolor1:hsla(156, 6%, 70%, 0.438);
+    --header-color:hsl(202.86deg 24.14% 17.06%);
+    --phone-border: rgb(2, 19, 2);
+   
+
+}
+
+/* Main Container */
+
+.main-container{
+    background-color: var(--bgcolor);
+    height: 100vh;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+/* grid containers */
+.home{
+    background-color: var(--bgcolor1);
+    display: grid;
+    place-content: center;
+}
+.update{
+    background-color: bisque;
+    display: grid;
+    place-content: center;
+}
+.call{
+    background-color: var(--bgcolor1);
+    display: grid;
+    place-content: center;
+}
+
+
+/* Grid container 1 phone display */
+
+.phone-size{
+    height: 26rem;
+    width: 15rem;
+    border:2px solid var(--phone-border);
+    border-radius: 10px;
+}
+
+/* Header */
+.header-container{
+    height: 3rem;
+    position: sticky;
+    background-color:var(--header-color);
+    border-radius: 9px 9px 0 0;
+}
+nav{
+    /* background-color: aqua; */
+    height: 3rem;
+}
+.header-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.whatsapp-logo{
+    color:white;
+    padding: 1.3rem .8rem 1rem;
+    font-size: 0.8em;
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top:1.3rem ;
+}
+.icons a img{
+    width: 16px;
+
+}
+
+/* Navigators */
+.navigator{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    place-content: center;
+    background-color:var(--header-color);
+    margin: 0 0 .4rem;
+}
+.navigator img{
+    width: 25px;
+
+}
+.navigator a{
+    margin-top: 1rem;
+    color: rgba(241, 227, 227, 0.72);
+    font-size: .7rem;
+    font-weight: normal;
+    text-decoration: none;
+} 
+
+.chats{
+    margin-top: .35rem;
+    margin-left: 1rem;
+}
+.updates{
+    margin-top: 0.35rem;
+    margin-left: 1rem;
+
+
+}
+.calls{
+    margin-top: 0.35rem;
+    margin-left: 1rem;
+
+}
+hr{
+    background-color: red;
+    height: 10px;
+}
+
