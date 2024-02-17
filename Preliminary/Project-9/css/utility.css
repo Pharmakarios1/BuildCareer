@@ -1,0 +1,106 @@
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.space{
+    justify-content: space-around;
+}
+.center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.start{
+    justify-content: flex-start;
+}
+.align-center{
+    align-items: center;
+}
+
+
+.border-all{
+    border: 1px solid red;
+   
+}
+
+
+.border-right{
+    border-right: 3px solid red;
+    height: 2rem;
+    padding-right: 1rem;
+    border-radius: .2rem;
+}
+
+
+
+
+
+/* Typography */
+
+
+
+/* Modification */
+.gap-min{
+    gap: 0.5rem;
+}
+.gap{
+    gap: 1rem;
+}
+.gap-1{
+    gap: 1.5rem;
+}
+.gap-2{
+    gap: 1.5rem;
+}
+.gap-3{
+    gap: 3rem;
+}
+.m{
+    margin: .8rem;
+}
+.my-4{
+    margin-top: 4rem;
+}
+.mt{
+    margin-top: 1rem;
+}
+.mb{
+    margin-bottom: .6rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 2rem;
+}
+.mx-1{
+    margin-left: 1rem;
+}
+.ml-0{
+    margin-left: 1.2rem;
+}
+.ml{
+    margin-left: 3rem;
+}
+
+.mr{
+    margin-right: .5rem;
+}
+
+.text{
+    font-size: .8rem;
+    color: rgb(178, 173, 173);
+    font-weight: 500;
+    margin: .5rem 0 0;
+}
+
+.w-13{
+    width: 6rem;
+}

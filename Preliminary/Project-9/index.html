@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purr' Coffee-shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/eaab1623f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container flex">
+      
+        <main class="flex flex-col">
+            <header class="flex center justify-between">
+                <div class="logo-search-wrapper flex ">
+                    <div class="logo flex center justify-center">
+                    <a href=""><span>Purr'</span>Coffee</a>
+                </div>
+            <div class="search-wrapper flex center">
+            <div class="global-search flex center justify-between ml">
+                <div class="search-icon-wrapper flex center ml-0">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" id="search" placeholder="Search...">
+                </div>
+                <button class="filter flex center justify-center gap-min"><i class="fa-solid fa-sliders"></i><span>Filter</span></button>
+            </div>
+            </div>
+        </div>
+            <div class="profile flex space center">
+                <div class="profile-content flex gap m">
+                <div class="profile-image-wrapper">
+                    <img src="./assets/profile-picture.jpg" alt="img">
+                </div>
+                <div class="profile-description flex flex-col justify-center">
+                    <h4>Albert Flores</h4>
+                    <p>purrcof@gmail.com</p>
+                </div>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            </header>
+            <div class="main-wrapper flex">
+                <aside class="left-aside">
+                    <nav class="flex flex-col gap-3 mt-3">
+                        <div class="nav-item-wrapper flex flex-col">
+                            <div class="nav-items flex flex-col gap-3">
+                              <div class="home-page-menu">
+                                <ul class="flex flex-col gap-1 ml-0">
+                                    <li class=" home-page flex center gap border-right">
+                                        <i class="fa-solid fa-house"></i>
+                                        <p><a href="">Home page</a></p>
+                                    </li>
+                                    <li class="flex center gap">
+                                        <i class="fa-solid fa-table-cells-large"></i>
+                                        <p><a href="">Menu</a></p>
+                                    </li>
+                                    <li class="flex center  gap">
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <p class=" order-counts flex center gap"><a href="">My orders</a><span class="flex center justify-center">21</span></p>
+                                    </li>
+                                    <li class="flex center gap">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                        <p><a href="">History</a></p>
+                                    </li>
+                                </ul>
+                              </div>  
+                              <div class="setting-page-menu">
+                                <ul class="flex flex-col gap-1 ml-0">
+                                    <li class="flex center gap">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p><a href="">Partners</a></p>
+                                    </li>
+                                    <li class="flex center gap">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <p><a href="">Settings</a></p>
+                                    </li>
+                                    <li class=" Donate flex center gap">
+                                        <i class="fa-solid fa-circle-dot"></i>
+                                        <p><a href="">Donate to shelter</a></p>
+                                    </li>
+                                   
+                                </ul>
+                              </div>
+                              <div class="logout">
+                                <ul class="flex center gap ml-0">
+                                <li class="flex center gap">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <p><a href="">Log Out</a></p>
+                                </li>
+                                </ul>
+                              </div>  
+                            </div>
+                            
+                        </div>
+        
+                    </nav>
+                </aside>
+                <div class="main-content flex flex-col gap-min">
+                    <nav class="main-nav flex center mt">
+                        <ul class=" main-nav-list flex gap center space">
+                            <li class="selected"><a href="">Coffee</a></li>
+                            <li><a href="">Non Coffee</a></li>
+                            <li><a href="">Food</a></li>
+                            <li><a href="">Snack</a></li>
+                            <li><a href="">Dessert</a></li>
+                        </ul><i class="fa-solid fa-bars"></i>
+
+                    </nav>
+                    <h2 id="coffee-card-head" class="mb">Coffee menu</h2>
+                    <div class="coffee-menu-tray flex flex-col gap ">
+                        <div class="menu-tray flex gap">
+                            <div class="card flex gap">
+                                <div class="item-image flex gap flex-col">
+                                    <div class="image-wrapper flex center justify-center">
+                                    <img src="./assets/cup-1.png" alt="">
+                                    </div>
+
+                                    <div class=" quantity-select-wrapper flex center justify-center">
+                                        <button class="quantity-select-btn align-center">−</button><span>2</span><button class="quantity-select-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-description flex flex-col">
+                                    <div class="description flex gap">
+                                        <h3>Cappucino </h3><h3 class="item-value">$4.98</h3>
+                                    </div>
+                                    
+                                    <p class="text">Combination of Coffe, milk, and palm sugar makes this drink a dlelicious</p>
+                                    <div class="size-btn-select flex space center">
+                                        <span>size</span>
+                                        <button id="btn-selected">Small</button>
+                                        <button>Large</button>
+                                    </div>
+                                
+                                    <button class="cart-btn-active">Added to Cart</button>
+                                </div>
+                            </div>
+                            <div class="card flex gap">
+                                <div class="item-image flex gap flex-col">
+                                    <div class="image-wrapper flex center justify-center">
+                                    <img src="./assets/cup-2.png" alt="">
+                                    </div>
+
+                                    <div class=" quantity-select-wrapper flex center justify-center">
+                                        <button class="quantity-select-btn align-center">−</button><span>2</span><button class="quantity-select-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-description flex flex-col">
+                                    <div class="description flex gap">
+                                        <h3>Coffe Latte </h3><h3 class="item-value">$5.98</h3>
+                                    </div>
+                                    
+                                    <p class="text">This caffe latte or coffee lotte is one of the popular types of milk coffee</p>
+                                    <div class="size-btn-select flex space center">
+                                        <span>size</span>
+                                        <button id="btn-selected">Small</button>
+                                        <button>Large</button>
+                                    </div>
+                                
+                                    <button class="cart-btn">Added to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-tray flex gap">
+                            <div class="card flex gap">
+                                <div class="item-image flex gap flex-col">
+                                    <div class="image-wrapper flex center justify-center">
+                                    <img src="./assets/cup-3.png" alt="">
+                                    </div>
+
+                                    <div class=" quantity-select-wrapper flex center justify-center">
+                                        <button class="quantity-select-btn align-center">−</button><span>2</span><button class="quantity-select-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-description flex flex-col">
+                                    <div class="description flex gap">
+                                        <h3>Americano </h3><h3 class="item-value">$6.98</h3>
+                                    </div>
+                                    
+                                    <p class="text">Americano coffee is expresso drinks combined with hot water</p>
+                                    <div class="size-btn-select flex space center">
+                                        <span>size</span>
+                                        <button id="btn-selected">Small</button>
+                                        <button>Large</button>
+                                    </div>
+                                
+                                    <button class="cart-btn">Added to Cart</button>
+                                </div>
+                            </div>
+                            <div class="card flex gap">
+                                <div class="item-image flex gap flex-col">
+                                    <div class="image-wrapper flex center justify-center">
+                                    <img src="./assets/cup-4.png" alt="">
+                                    </div>
+
+                                    <div class=" quantity-select-wrapper flex center justify-center">
+                                        <button class="quantity-select-btn align-center">−</button><span>2</span><button class="quantity-select-btn">+</button>
+                                    </div>
+                                </div>
+                                <div class="item-description flex flex-col">
+                                    <div class="description flex gap">
+                                        <h3>V60</h3><h3 class="item-value">$4.98</h3>
+                                    </div>
+                                    
+                                    <p class="text">The V60 technique is one of the most used techniques by barista</p>
+                                    <div class="size-btn-select flex space center">
+                                        <span>size</span>
+                                        <button id="btn-selected">Small</button>
+                                        <button>Large</button>
+                                    </div>
+                                
+                                    <button class="cart-btn">Added to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="right-aside flex flex-col gap-2 ">
+                    <div class="cart-box flex flex-col mt">
+                        <div id="cart-order" class="flex justify-between center">
+                            <h3 class="">Cart </h3>
+                            <span>Order #3243</span>
+                        </div>
+                        <div class="cart-btn-select flex space gap-min justify-center mt">
+                            <button id="btn-selected">Delivery</button>
+                            <button>Dine in</button>
+                            <button>Take away</button>
+                        </div>
+                        <div class="item-carted flex flex-col center mt">
+                            <ul class="item-carted-lists flex flex-col gap-2">
+                                <li class=" item-carted-list flex gap">
+                                    <div class="carted-item-image flex center justify-center">
+                                        <img src="./assets/cup-4.png" alt="">
+                                    </div>
+                                    <div class="carted-item-description-wrapper flex flex-col justify-between">
+                                       <div class="description">
+                                        <h4>Cappucino</h4>
+                                        <p>small- 200kg</p>
+                                       </div>
+                                       <div class="amount flex center justify-center gap">
+                                        <h4>$14.95</h4>
+                                        <div class=" quantity-select-wrapper flex center justify-center">
+                                            <button class="quantity-select-btn align-center">−</button><span>2</span><button class="quantity-select-btn">+</button>
+                                        </div>
+                                       </div>
+        
+                                    </div>
+                                </li>
+                                <span class="list-divider"></span>
+                                <li class="item-carted-list flex gap">
+                                    <div class="carted-item-image flex center justify-center">
+                                        <img src="./assets/cup-2.png" alt="">
+                                    </div>
+                                    <div class="carted-item-description-wrapper flex flex-col justify-between">
+                                       <div class="description">
+                                        <h4>Coffe Latte</h4>
+                                        <p>small- 200kg</p>
+                                       </div>
+                                       <div class="amount flex gap center justify-center">
+                                        <h4>$5.95</h4>
+                                        <div class=" quantity-select-wrapper flex center justify-center">
+                                            <button class="quantity-select-btn align-center">−</button><span>1</span><button class="quantity-select-btn">+</button>
+                                        </div>
+                                       </div>
+        
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="total-amount flex flex-col gap mt">
+                            <div class="amount-wrapper flex flex-col gap-min">
+                                <h5 class="flex justify-between">items <span>$20.95</span></h5>
+                                <h5 class="flex justify-between">Discounts <span>-$3.00</span></h5>
+                            </div>
+                            <div class="total-wrapper amount-wrapper flex justify-between mb">
+                                <h5 class="">Total </h5>
+                                    <h5 class="total-highlights">$126.00</h5>
+                            </div>
+                        </div>
+                        <div class="flex center justify-center ">
+                            <button class="cart-btn-active ">Place on order</button>
+                        </div>
+                       
+                    </div>
+        
+                </aside>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
